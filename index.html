@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" type="image/ico" href="./img/myicon.ico">
+    <link rel="stylesheet" href="styles.css">
+    <title>Basic CSS</title>
+</head>
+<body>
+    
+    <!----------------------------- START OF HOME PAGE ---------------------------->
+
+    <div id="header">
+        <div class="container">
+            <nav>
+                <h1 class="logo">Nikolai</h1>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-x" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-container">
+                <div class="header-row">
+                    <div class="header-col-1">
+                        <p>Hi There I'm</p>
+                        <h1>Web Developer</h1>
+                        <p class="header-subtext">Hey there! Im <b>James</b>, a dedicated second-year student pursuing a Bachelor of Science in Information Technology (BSIT).</p>
+                        <a href="#contact" class="home-btn">Hire Me</a>
+                    </div>
+                    <div class="header-col-2">
+                        <img src="./img/1.png" alt="logo ">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------------ END OF HOME PAGE ----------------------------->
+
+    <!---------------------------- START OF ABOUT PAGE ---------------------------->
+
+    <div id="about">
+        <h1 class="title">About Me</h1>
+        <div class="container">
+            <div class="about-row">
+                <div class="about-col-1">
+                    <img src="./img/profile.png" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="about-name">I'm Meljames Cortes</h1>
+                    <span class="divider"></span>
+                    <p class="text-indent">Hey there! Im James, a dedicated second-year student pursuing a Bachelor of Science in Information Technology (BSIT). With a passion for technology and a thirst for knowledge, I'm on a mission to deepen my understanding of the digital world and its endless possibilities.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('hobbies')">Hobbies</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Development</span><br>Proficient in designing, building, and maintaining websites or web applications using various programming languages, frameworks, and tools.</li>
+                            <li><span>Troubleshooting</span><br>Skilled in identifying and resolving technical issues effieciently, employing systematic problem-solving methods to diagnose and address issues in software, hardware, or systems.</li>
+                            <li><span>Communication</span><br>Strong verbal and written communication skills, able to convey complex technical concepts in a clear and understandable manner. Capable of collaborating effectively with team members, clients, and stakeholders.</li>
+                            <li><span>Teamwork</span><br>Collaborative and cooperative approach to working within a team, contributing positively to group dynamics, and sharing knowledge and skills to achieve common goals.</li>
+                            <li><span>Learning Agility</span><br>Proactive in acquiring new knowledge and skills, demonstrating a quick grasp of new technologies, tools, and methodologies. Continously seeks oppotunities for professional development and growth.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="hobbies">
+                        <ul>
+                            <li><span>Gaming</span><br>Enthusiastic player with a broad interest in various gaming platforms and genres.</li>
+                            <li><span>Photography</span><br>Skilled in capturing visually appealing images, passionate about storytelling through photography.</li>
+                            <li><span>Sports</span><br>Active participant or avid follower, with knowledge of sports rules, strategies, and physical fitness.</li>
+                            <li><span>Music</span><br>Appreciative of diverse music genres, with knowledge of music theory and an interest in playing instruments.</li>
+                            <li><span>Traveling</span><br>Avid explorer with a passion for discovering new places, cultures, and cuisines.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!----------------------------- END OF ABOUT PAGE ----------------------------->
+
+    <!--------------------------- START OF PROJECT PAGE --------------------------->
+
+    <div id="project">
+        <h1 class="title">Project</h1>
+        <div class="container">
+            <div class="work-list">
+                <div class="work">
+                    <img src="./img/project-1.jpg" alt="">
+                    <div class="layer">
+                        <h3>Canva Portfolio</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a.</p>
+                        <a href="https://nikkolai.my.canva.site/portfolio"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/project-2.jpg" alt="">
+                    <div class="layer">
+                        <h3>Headings in HTML</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a.</p>
+                        <a href="https://nikolajmc.github.io/cortes-itelec-html-headings/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/project-3.jpg" alt="">
+                    <div class="layer">
+                        <h3>Favorite Dish</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a.</p>
+                        <a href="https://nikolajmc.github.io/cortes-itelec-favdish/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/project-4.jpg" alt="">
+                    <div class="layer">
+                        <h3>OL & UL</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a.</p>
+                        <a href="https://nikolajmc.github.io/cortes-itelec-ol-ul/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="./img/project-5.jpg" alt="">
+                    <div class="layer">
+                        <h3>File Path in HTML</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, a.</p>
+                        <a href="https://nikolajmc.github.io/cortes-itelec-filepath/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#project" class="project-btn">See more</a>
+        </div>
+    </div>
+
+    <!---------------------------- END OF PROJECT PAGE ---------------------------->
+
+    <!--------------------------- START OF CONTACT PAGE --------------------------->
+
+    <div id="contact">
+        <h1 class="title contact-title">Get in Touch</h1>
+        <div class="container">
+            <div class="contact-form">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
+                    <button type="submit" class="contact-btn btn2">Submit</button>
+                </form>
+            </div>
+            <div class="contact-details">
+                <h1>Nikolai</h1>
+                <p>I'm always open to collaborations, opportunities, and discussions related to Information Technology. Looking forward to hearing from you!</p>
+            </div>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/profile.php?id=100009402852296"><i class="fa-brands fa-square-facebook"></i></i></a>
+                <a href="https://www.linkedin.com/in/meljames-cortes-0b46702b3/"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/Nikolajmc"><i class="fa-brands fa-square-github"></i></a>
+                <a href=""></a>
+            </div>
+        </div>
+    </div>
+
+
+    <!---------------------------- END OF CONTACT PAGE ---------------------------->
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        
+        function opentab(tabname) {
+            for(tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+
+    <script>
+        var sidemu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemu.style.right = "0";
+        }
+
+        function closemenu() {
+            sidemu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbySAlZk7-nwuyxHqpjmtBokuuiiv_yCw5824mCLBBazJZyG9_BB4_N0aGrEki9Y5EctXQ/exec'
+        const form = document.forms['submit-to-google-sheet']
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+</html>
